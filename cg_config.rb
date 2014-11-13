@@ -1,10 +1,7 @@
 require 'coursegen'
 
 # bucket for AWS Deployment of the course
-AWS_BUCKET = "cosi236b.courses.salas.com"
-
-# Local directory path for directory of topics
-#TOPICS_PATH = "/mydev/cg-topics"
+AWS_BUCKET = "cos166b.2014.courses.salas.com"
 
 # Local directory path for directory of content
 CONTENT_PATH = "/mydev/cosi166b-2014"
@@ -18,8 +15,8 @@ COURSE_LONG_NAME = "Software Engineering"
 
 # Schedule information. Note that Monday is day 0
 LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
-		first_day: "jan-12-2015", 
-		weekdays: [:monday, :wednesday, :friday],
+		first_day: "jan-13-2015", 
+		weekdays: [:tuesday, :wednesday, :friday],
 		number: 26,
 		skips: [])
 
@@ -27,6 +24,7 @@ LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
 SECTION_CONFIG = [
 		SectionDef.new("Lectures", "lectures", type: :lecture, schedule: LECTURES_SCHEDULE_CONFIG),
 		SectionDef.new("Introduction", "intro", hidden: false, type: :section),
+		SectionDef.new("Background", "background", hidden: false, type: :section),
 		SectionDef.new("Root", "root", hidden: true, type: :section),
 		SectionDef.new("Topics", "topics", hidden: true, type: :section),
 	  SectionDef.new("Hidden", "hidden", hidden: true, type: :section)
