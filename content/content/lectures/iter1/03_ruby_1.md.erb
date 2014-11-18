@@ -1,0 +1,41 @@
+---
+title: Ruby Part One
+---
+<%= homework_hdr %>
+* Learn about Git and Github, create your personal github account
+* Continue working on <%= link_to_topic :pa1 %>
+* <%= deliverable "Check in your pa1 so far into Github and submit the link to Latte" %>
+
+#### Review: Git Basics
+* Recommended local directory structure:
+<%=code_begin%>
+~/mydev
+    /pa1
+    /pa2-test
+    /sdasdasd
+    /experiment
+    ...
+<%=code_end %>
+* Commands done only from your top level "mydev" directory
+    * git clone (create a new directory from a repo on github)
+* Commands done from inside an individual repos local directory
+    * git add --all (add all changed files to staging)
+    * git commit -m "message" (create a "commit" with all staged files)
+    * git push (push all local commits up to github)
+    * git pull (pull any changes made from github to look at it locally)
+    * git status (see where things stand)
+* NB: Don't do a git clone from 'inside' a local repo directory
+
+#### Overview and course web site
+
+* How will the whole term work? Let's look at the term overview
+* How will the lab work? Does it have it's own grade? 
+* How will the projects work?
+
+
+#### Ruby Live Coding Demonstration
+ 
+<%= include_ruby :intro_tut %>
+
+#### Next Class
+* Look at homework: <%= link_to_lecture :project_select %> 
