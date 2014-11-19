@@ -17,7 +17,7 @@ COURSE_LONG_NAME = "Software Engineering"
 LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
 		first_day: "jan-13-2015", 
 		weekdays: [:tuesday, :wednesday, :friday],
-		number: 26,
+		number: 39,
 		skips: [])
 
 # Sections in the right hand margin of the page
