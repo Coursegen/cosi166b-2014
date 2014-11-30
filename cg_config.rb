@@ -18,7 +18,7 @@ LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
 		first_day: "jan-13-2015", 
 		weekdays: [:tuesday, :wednesday, :friday],
 		number: 39,
-		skips: [])
+		skips: ["feb-17-2015", "feb-18-2015", "feb-20-2015", "apr-7-2015", "apr-8-2015", "apr-10-2015", "apr-28-2015"])
 
 # Sections in the right hand margin of the page
 SECTION_CONFIG = [
