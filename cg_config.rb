@@ -21,14 +21,15 @@ LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
 		skips: ["feb-17-2015", "feb-18-2015", "feb-20-2015", "apr-7-2015", "apr-8-2015", "apr-10-2015", "apr-28-2015"])
 
 # Sections in the right hand margin of the page
+# Bullet choices are :dash, :star, :plus, :minus
 SECTION_CONFIG = [
-		SectionDef.new("Introduction", "intro", hidden: false, type: :section),
-		SectionDef.new("Lectures", "lectures", type: :lecture, schedule: LECTURES_SCHEDULE_CONFIG),
+		SectionDef.new("Introduction", "intro", hidden: false, type: :section, bullet: :star),
+		SectionDef.new("Lectures", "lectures", type: :lecture, schedule: LECTURES_SCHEDULE_CONFIG, bullet: :dash),
 		SectionDef.new("Incubator", "incubator", hidden: false, type: :section),
 		SectionDef.new("Background", "background", hidden: false, type: :section),
-#		SectionDef.new("Root", "root", hidden: true, type: :section),
 		SectionDef.new("Topics", "topics", hidden: true, type: :section),
 	  SectionDef.new("Hidden", "hidden", hidden: true, type: :section)
 ]
-
-
+# Options are:
+# bullet_style: css style for each bullet
+STYLING_CONFIG = {bullet_style: "\"font-size: 60%; width: 10px; color: grey\""}
