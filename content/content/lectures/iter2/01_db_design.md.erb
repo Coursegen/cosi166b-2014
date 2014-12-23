@@ -3,18 +3,18 @@ title: Database Design
 ---
 
 <%= homework_hdr %>
-* Continue working on Programming Assignment 3, <%= link_to_topic :pa_mazes %>. <%= deliverable "Check in your progress to date into Github" %>
-* Reminder: the final deadline for PA2 was *yesterday*
-* Do research on the "Active Record Pattern". Here are some links to start with:
-	* Martin Fowler's [Active Record Pattern](http://www.martinfowler.com/eaaCatalog/activeRecord.html)
-	* [Wikipedia on ActiveRecord](http://en.wikipedia.org/wiki/Active_record_pattern)
-	* Read and and try to understand Martin Fowler's [ORM Hate](http://martinfowler.com/bliki/OrmHate.html)
-	* Write a blog post about ORM, the Active Record pattern, what you learned, understood and didn't follow. <%= deliverable "Submit reflection." %>
-* Read [Basics of good database design in Web Development](http://www.onextrapixel.com/2011/03/17/the-basics-of-good-database-design-in-web-development/)
-* Product Teams: Using all that background, develop initial schema for your product. Include table names, field or attribute names, and relations or joins. <%= team_deliverable "Detailed initial schema for your product. Any form you want." %>
+* Continue working on Programming Assignment 3, <%= link_to_topic :pa_mazes %>. As usual, you will be doing your coding in your <%= link_to_intro :portfolio %>.
+* Do research on the "Active Record Pattern". 
+  * A pattern is simply a way of arranging code, a common way of solving a design problem derived from research as well as real world practice. This particular pattern has to do with ways of tying databases into object oriented programs in a rich and convenient way.
+  * Read [Active Record Pattern](http://www.martinfowler.com/eaaCatalog/activeRecord.html) and also [ORM Hate](http://martinfowler.com/bliki/OrmHate.html), both articles by a famous OO designer Martin Fowler.
+  * <%= deliverable "Your observations about the ActiveRecord pattern. What you learned, how you would explain it to another programmer. What you understood and what you still don't follow." %>
+* Develop an initial schema for your product.
+  * Read [Basics of good database design in Web Development](http://www.onextrapixel.com/2011/03/17/the-basics-of-good-database-design-in-web-development/)
+  * Product Teams: Using all that background, develop initial schema for your product. Include table names, field or attribute names, and relations or joins. <%= team_deliverable "Detailed initial schema for your product. Any form you want." %>
+* Useful resources: <%= link_to_topic :rails_links %>
 
-#### Useful
-<%= link_to_topic :rails_links %>
+#### Review Homework
+* Discuss readings and work from the homework.
 
 #### Relational Databases and Object Oriented Software
 * What does an ORM do?
@@ -26,11 +26,11 @@ title: Database Design
 * What is the relationship between the underlying DB and the AR objects
 * What is database Migration. What problem does it solve?
 
-#### A level deeper: Data Modeling
-* Link to <%= link_to_topic :data_modeling %>
+<%= include_topic :data_modeling %>
 
-#### Review each of the 5 products tables so far
-* X
-* Y
+#### Review each of the products tables so far
+
+#### Look at next class
+* Look at homework <%= link_to_next_lecture %>
 
 
