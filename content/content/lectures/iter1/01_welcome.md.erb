@@ -1,21 +1,22 @@
 ---
 title: Welcome
 desc: Intro to course and how to succeed
-homework: published
+homework: Learn Ruby; begin on Movies-1
 ---
 <%= homework_hdr %>
 
-<%= bold_red "Note for first day of class:" %> Each day of class has a page on this web site. The first section of that page is always the homework due on that very day. **So in other words, the homework listed here is actually "pre-work" for day one. We will go over this in a little more detail during class.**
+<%= callout("Note for first day of class:", " Each day of class has a page on this web site. The first section of that page is always the homework due on that very day. So in other words, the homework listed here is actually 'pre-work' for day one. We will go over this in a little more detail during class.") %>
 
-* Locate and begin going through [Learn Ruby The Hard Way](http://learnrubythehardway.org/book/). Depending on your programming you might find the first 10 or 20 or 30 steps tedious. But keep at it. And save the intermediate files in a directory, because you will be asked to submit it at the end. You will be responsible for all 52 lessons plus closing chapters in 1 week.
+* Locate and continue going through [Learn Ruby The Hard Way](http://learnrubythehardway.org/book/). Depending on your programming you might find the first 10 or 20 or 30 steps tedious. But keep at it. And save the intermediate files in a directory, because you will be asked to submit it at the end. You will be responsible for all 52 lessons plus closing chapters in 1 week.
 * Study the requirements for the first programming assignment: <%= link_to_topic :pa_movies_1 %>. You will be using what you've learned about programming in your previous courses. Yes, it's a new langauge, but really the basic ideas are exactly the same. We are working on problem solvingn as much as anything. Come ready to discuss the approach you will take in class.
 
-#### What is this course about: Software Engineering
-* Introduce Pito, where I came from, and why I am excitied about this course. Look at <%= link_to_topic :pitofaq %>
+#### Welcome
+
+* Introduce Pito, where I came from, and why I am excitied about this course. 
+* Look at: <%= link_to_topic :pitofaq %>
 * Here are the <%= link_to_topic :books_cosi166 %>
-* What is Software Engineering anyway? 
-* <%= discussion "How is it diffent (or is it different) from Computer Science?" %>
-* <%= link_to_background :learning_objectives %>
+* Here are the <%= link_to_topic :goals_cosi166 %>
+* The prime source for this course is this web site itself!
 
 #### Exercise
 * Pair up with person next to you
@@ -27,12 +28,24 @@ homework: published
 * You are responsible for reading the lecture's page before each class
 * There you will find the list of homeworks due for the class
 * Latte is used **just** as a way to submit homeworks
+* Let's look at the <%= link_to_background :grading %>
 
-#### How to do homework
+#### Homeworks and Grading
 * Yes there is a fair bit of homework
-* All homework is numbered by: Lecture Number.Deliverable number. So for example, the first deliverable listed on for this lecture is 1.1.
-* Often there is a concrete deliverable, a blog post, a zip file with code, etc. Those have to be submitted to latte.
-* If there is no concrete deliverable, you can assume that it will be discussed in class and you will be called on.
+* You are responsible for reading the lecture's page before each class
+* Some homeworks have explicit deliverables:
+  * Explicit deliverables are noted as follows: "<%= deliverable "You gotta do this" %>"
+  * If there is no Explicit deliverable, you can assume that it will be discussed in class and you will be called on.
+  * Those are submitted to the appropriate spot in Latte, either as a .pdf (for writing) or as a .zip file
+* The portfolio
+  * Where all your programming work has to happen
+  * Look carefully at <%= link_to_intro :portfolio %>.
+  * Your portfolio will be formally reviewed every week for progress
+
+<%= callout("NOTE", " Often there is a explicit deliverable, a blog post, a zip file with code, etc. Those have to be submitted to LATTE") %>
+
+#### 30 Minute Quick Assignment
+* <%= ir("check here on day 1 of class") %>
 
 #### Projects
 
@@ -40,7 +53,10 @@ homework: published
 * We will form teams of exactly four students. You will be assigned to a team.
 * Let's look at what it's like to <%= link_to_topic :working_in_teams %>
 * Each team will work together to choose a project from our list of: <%= link_to_incubator :prod_candidates %>
-* To help in organizing the teams, I am asking everyone to *really quickly* Fill in [Skills Inventory](https://docs.google.com/forms/d/1mKzR9kt_1DGD_zK5--sKNnBh1x3e8WEA0I2o9JU-BCw/closedform). (This page is protected until the day of class) Obviously this is not graded. The purpose is to help us put together good teams. **Do it now please**
+
+#### Skills Inventory
+* **Whether you are officially registered or want to be on the wait list**
+* *Really quickly* Fill in [Skills Inventory](https://docs.google.com/forms/d/1mKzR9kt_1DGD_zK5--sKNnBh1x3e8WEA0I2o9JU-BCw/closedform). (This page is protected until the day of class) Obviously this is not graded. The purpose is to help us put together good teams. **Do it now please**
 
 #### Product Reviewers
 * Four experienced Software Engineering professionals will be our "Product Reviewers"

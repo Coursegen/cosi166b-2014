@@ -1,19 +1,27 @@
 ---
 title: Implementing the Database
+desc: Applying what we learned to an actual db implementation
 ---
 <%= homework_hdr %>
-* Read Chapters 5 and 6 of AWDR. It is important that you really try and execute all the code snippets there and get them to work. Notice that "rails new depot" creates a directory called "depot" from whereever you are. So cd to your /mydev and to rails new depot from there. Follow along and do all the code in Chapter 6, prove to yourself that it runs. Write down two things you just don't understand. <%= nb "Try hard to understand what is going on. You need this." %> Make a screencast of the results of your work. No need to record your whole coding session just you showing the different pages. 
-  * <%= deliverable "Post a link Screencast of you demonstrating the pages and what you got to from those two chapters." %>
-  * **Optional Deliverable** Describe two things you saw that you just did not understand.
-* Work on Programming Assignment 3. Post latest to github. (See <%= link_to_topic :pa_mazes%>)
+* Read Chapter 6 of [AWDR]. 
+  * It is important that you really try and execute all the code snippets there and get them to work. 
+  * Notice that "rails new depot" creates a directory called "depot" whereever you are. So in your <%= link_to_intro :portfolio %>,
+    * `cd portfolio166b/cburkh`
+    * `rails new depot`
+    * `cd portfolio166b/cburkh/depot`
+  * Follow along and do all the code in Chapter 6, prove to yourself that it runs.
+  * You will discover that to write a web app you need to use many different 'langauges': Ruby, Html, css, and other languages. 
+  * Don't expect to understand everything, we will be going over this several more times. But try, really try. Write down two things you just don't understand. <%= nb "Try hard to understand what is going on. You need this." %> <%= deliverable "Two things you just didn't understand in Chapter 6" %>
 
-#### Models and Databases
-* <%= link_to_topic :models %>
-* <%= link_to_topic :database_migration %>
-* <%= link_to_topic :rails_db_mechanics %>
+#### Homework Discussion
+* Lets talk about stuff you just didn't understand.
 
-#### Next Class
-* Look at homework: <%= link_to_lecture :mvc_model %> 
+<%= include_topic :models %>
+<%= include_topic :database_migration %>
+<%= include_topic :rails_db_mechanics %>
+
+#### Look at next class
+* Look at homework <%= link_to_next_lecture %>
 
 
 

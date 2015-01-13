@@ -1,26 +1,34 @@
 ---
 title: More Ruby
 desc: Where we go deeper into Ruby and Rails
-homework: published
+homework: Get to 50% on Movies-2; first critical team meeting; write project kickoff post; finish all the last lessons of Ruby The Hard Way
 ---
-#### Homework due for today
+<%= homework_hdr %>
 
-* Read Chapter 4 (Introduction to Ruby) in AWDR. It will be a good review of what you've worked on so far. I am sure you will find some new insights and goodies there. Try out code examples from the book. 
-* Research what Ruby Gems are. Experiment with some code. Research Bundler (a ruby utilty.) Experiment with Bundler. Find an interesting gem and try to write a trivial sample program using it. <%= deliverable "zip up your trivial sample and submit it." %>
-* Begin and do substantial work on the second pa: <%= link_to_topic :pa_movies_2 %>. This one as you know builds on <%= deliverable "Check in your PA2 so far into Github" %>
-* <%= team_deliverable "Write your project kickoff post in Piazza" %>
-	* Each team get meets to jointly write their team kickoff piazza post
-		* Confirm team members
-		* Name of product
-		* what role (team and technical) each person seems to fall into
-		* What interests the team most about this product
-<%= include_topic :oo_design %>
+<%= callout("Previous Students Say"," \"It's tempting to just pick any old product and just move on. Not a good idea! You might regret that later. You will be spending a lot lot of time with the choice, so it's worth choosing with care.\"") %>
+* Each team meets for at least 60 minutes to discuss and decide on their direction.
+	* Confirm team members
+  * Decide on specific weekly meeting time, like a class commitment
+  * Discuss and decide the product you want to build
+  * What interests the team most about this product
+  * What functionality the MVP should contain. Make a detailed list.
+  * <%= team_deliverable "Write your project kickoff post containing all that." %>
+* By now you have to have completed all the lessons of [Learn Ruby The Hard Way](http://learnrubythehardway.org/book/preface.html). Once you make it this far, you can call yourself an intermediate Software Developer! The lessons go far beyond just Ruby, so congratulations. I know it's been a lot of work! Remember that your work should be happening inside your <%= link_to_intro :portfolio %> 
+* Begin and do substantial work on the second pa: <%= link_to_topic :pa_movies_2 %>. This one as you know builds on <%= link_to_topic :pa_movies_1 %>. As usual, you will be doing your coding in your <%= link_to_intro :portfolio %>. Start a new top level directory for this second PA.
+
+
+#### Discussion about homework
+* Questions about <%= link_to_topic :pa_movies_2 %>
+* Each team gives a quick intro on their plans.
 
 #### Ruby Gems
 * Package Management
 * Ruby Gems
 * Ruby Bundler
- 
+
+#### Intro to Object Oriented Language Features
+<%= include_topic :oo_design %>
+
 #### Ruby Live Coding Demonstration and discussion
 <%= include_ruby :classes_tut %>
 
