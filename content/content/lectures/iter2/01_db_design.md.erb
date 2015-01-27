@@ -1,25 +1,20 @@
 ---
 title: Database Design
 desc: Applied DB Design, for your products
-homework: Continue Mazes PA; research Active Record Pattern; individually design initial schemas for your products
+homework: Continue Mazes PA; Research noSql databases; individually design initial schemas for your products
 ---
 
 <%= homework_hdr %>
 * Continue working to on Programming Assignment 3, <%= link_to_topic :pa_mazes %>. As usual, you will be doing your coding in your <%= link_to_intro :portfolio %>.
-* Do research on the "Active Record Pattern". 
-  * A pattern is simply a way of arranging code, a common way of solving a design problem derived from research as well as real world practice. This particular pattern has to do with ways of tying databases into object oriented programs in a rich and convenient way.
-  * Read [Active Record Pattern](http://www.martinfowler.com/eaaCatalog/activeRecord.html) and also [ORM Hate](http://martinfowler.com/bliki/OrmHate.html), both articles by a famous OO designer Martin Fowler.
-  * <%= deliverable "Your observations about the ActiveRecord pattern. What you learned, how you would explain it to another programmer. What you understood and what you still don't follow." %>
-* Develop an initial schema for your product.
-  * Read [Basics of good database design in Web Development](http://www.onextrapixel.com/2011/03/17/the-basics-of-good-database-design-in-web-development/)
-  * Product Teams: Using all that background, develop initial schema for your product. Include table names, field or attribute names, and relations or joins. <%= deliverable "Detailed initial schema for your product. Any form you want." %>
-* Useful resources: <%= link_to_topic :rails_links %>
+* NoSql dabases: There's a 'new' generation of databases which are non-relational often known as NOSQL databases. Here's one article about it: [NoSQL vs SQL](https://www.udemy.com/blog/nosql-vs-sql-2/). There are many many more. Do your own additional research and write your own view from that research about the advantages and disadvantages of NoSQL vs. 'traditional' SQL databases. <%= deliverable "Your report, 1 page or less." %>
+* Develop an initial schema for your product. Read [Basics of good database design in Web Development](http://www.onextrapixel.com/2011/03/17/the-basics-of-good-database-design-in-web-development/). 
+  * You need to think clearly about the functionality that your system will support. You also need to think carefully about relationships. For example, let's say I have a Student entity and I have a Course entity. Is there exactly one student for every course (1 to 1). Are there many students for any one course (many to 1) or perhaps does one student have many courses (1 to many), or maybe even a combination - one student can have many courses, and one course can have many students - (many to many). Don't even start worrying about designing your database until you have questions like that clear in your mind!
+  * Using all that background, develop initial schema for your product. Each team member work separately so you can then compare and contrast what you came up with. Include table names, field or attribute names, and relations or joins. <%= deliverable "Detailed initial schema for your product. Any form you want." %>
 
 <%= callout("REMINDER", " Your portfolios will be reviewed and graded TODAY for progress.") %>
 
-
 #### Review Homework
-* Talk through what Active Record means; what patterns are
+* Nosql discussion. What's good, what's bad. What's yoru experience?
 * Discuss some exemplar Schemas that were designed.
 
 #### Relational Databases and Object Oriented Software
