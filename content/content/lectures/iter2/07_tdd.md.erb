@@ -1,9 +1,90 @@
 ---
-title: TDD Continued...
-desc: More about testing and test driven development
-homework: Deliver pa_mazes.
+title: Test Driven Development
+desc: Diving deeper into Testing and Quality
+homework: Deliver pa_mazes. Watch video and write reflection.
 ---
 <%= homework_hdr %>
 * Finish working Programming Assignment 3, <%= link_to_topic :pa_mazes %>. As usual, you will be doing your coding in your <%= link_to_intro :portfolio %>, directory `mazes`
+* View a video talk by the original inventor of Rails where he debunks TDD. This video: [RailsConf 2014 Keynote](http://youtu.be/9LfmrkyP81M), from last year caused untold controversy. Watch it and write a brief reflection. <%= deliverable "Your reflection, withy our summary of DHH's key arguments and your reaction to them. Max 1 page, pdf." %> 
+* Catch up on any old homeworks that you are behind on
 
-#### COMING SOON!
+#### Evolution of Software Testing - in brief
+
+* [The Original "Bug" found by Grace Hopper](http://en.wikipedia.org/wiki/Grace_Hopper#mediaviewer/File:H96566k.jpg)
+
+* Industrial or Manufacturing model
+	* Quality Assurance: Make sure that the product we ship works as advertised
+	* Factory cranks parts, random sample is sent back to the lab and 'tested'
+	* Statistics used to deterime whether the quality was at the desired level
+* Software Quality Assurance
+	* Realize that software was different
+	* Required a detailed functional spec
+	* Believed in an adverserial relationship between QA and Development team
+	* Written test plans
+	* Most testing was manual
+* Automated Analysis as a Computer Science persuit
+	* Read code and detect the errors?
+	* "Executable" specifications
+	* Automatic measures of code complexity to predict location of errors
+* Introduction of test automation
+	* Required some rearchitecture of the software
+	* Turned the 'manual' test plans into something that could be 'executed'
+* Beginning of merging of QA with Dev
+	* We see that finding a bug early in cycle saves big bucks
+	* We see that software can be designed to be testable
+	* Titles startreflecting this "Quality Engineer" -- QE not QA
+	* 'Testing' function is integrated into the development team
+* Agile methodology
+	* Whole concept of shipping a product begins disappearing
+	* Rapid release cycles, even continuous delivery
+	* Holy grail is 100% automated testing. Manual testing disappears
+	* Agile's emphasis on refactoring demands finer grained unit tests
+* Present era
+	* Contunous testing, integration and testing
+	* The notion of a release or a version totally gone
+	* Feature switches allow individual features to be released and un-released
+	* Cloud computing means that deployment happens to faraway servers
+	* Further integration of "operations" into software development: Rise of Devops.
+
+* Here's a longer version: [History of Software Testing](http://www.testingreferences.com/testinghistory.php)
+
+#### Philosophy
+
+###### Credit: Some of this is directly quoting [POODR](http://www.poodr.com)
+
+* Testing and Refactoring:
+	* Recall: *Refactoring is a controlled technique for improving the design of an existing code base. Its essence is applying a series of small behavior-preserving transformations, each of which 'too small to be worth doing'*
+	* So you always should have solid tests before you start refactoring
+	* Each small change is verified to not have changed behavior
+* Testing and Agile
+	* Notion of a 'release' is gone
+	* Notion of a 'spec' is gone
+	* Cycles are much faster
+	* Automation becomes a requirement
+* Testing and Design
+	* Insight (not shared by all) that TDD supports design
+	* Insist on looking at the class/module/unit first as a black box that delivers services
+	* Good design delays all decisions that can be delayed until further requirements are nailed down.
+	* Refactoring is how new requirements are incorporated
+	* Good test suites is what gives you the confidence to refactor
+
+#### Good Testing
+* Fundamental motivation for testing: reduce costs
+	* Writing tests should over the lifetime of the code cost less
+	* Otherwise it's not worth doing
+	* How does it reduce costs?
+* Breaking it down
+	* Finding bugs early - reducing errors
+	* Making assumptions explicit - documenting code with code
+	* Make refactoring possible and safe
+	* Driving design decisions (TDD)
+* Philosophy of Commenting
+
+
+
+
+
+
+
+* <%= link_to_topic :mocking %>
+* [Rails Testing Pyramid](http://blog.codeclimate.com/blog/2013/10/09/rails-testing-pyramid/)
