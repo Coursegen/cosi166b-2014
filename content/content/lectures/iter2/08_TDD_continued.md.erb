@@ -1,6 +1,7 @@
 ---
 title: Authentication
 homework: REad [AWDRR] Chapter 14. Team implements authentication for their product
+desc: We actually continue on TDD from the previous class
 ---
 <%= homework_hdr %>
 * Introduce testability to your product
@@ -42,49 +43,7 @@ homework: REad [AWDRR] Chapter 14. Team implements authentication for their prod
 * Spark Grant
 * [RailsTutorial book](https://www.railstutorial.org/book)
 
-#### Review of controllers
-
-##### Resources in Rails
-* Automatic wiring of plumbing between urls, routing, models, and controllers
-* Takes advantage of standardized patterns
-    * Nesting model in the URLs
-    * CRUD operations as actions
-    * Path naming (path_to_user instead of "")
-    * Controller naming
-* Huge time saver and bug saver!
-
-##### Controller Actions
-* Who calls the controller action?
-* What parameters are supplied automatically by the controller action?
-* Sessions, why they are needed and how they work
-* Why does it take two separate actions to implement "create"?
-
-#### Authentication
-
-##### Introduction
-* Beware: this is hairy
-* As an app runs, need to know "who is logged in"
-* Remember the case of "no one is logged in"
-* User is designated internally by a User (or Account, or similar concept)
-
-##### Mechanics
-* Authentication support has to:
-  * Present a log in page
-  * Present a account creation page
-  * Check the "credentials"
-  * Make the identity of the logged in user 'globally available' within your app
-  * What is the 'identify of the logged in user?', it's just a method called 'logged_in_user' that when called returns an instance of the User model.
-* But should not:
-  * Decide what operations that user may do or not. Conceptually and architecturally, should be kept separately
-  * Store the user's password in a database. How do you authenticate then?
-* Authorization
-  * Can "the currently logged in user" do this operation?
-  * Often implemented with a list of "user types" (e.g. admin, professor, student)
-  * And with a list of "operation types" (e.g. "administration", "read-write", "read-only")
-  * Guard code in each controller/action
-
-#### How it works in Rails
-* <%= link_to_topic :basic_authentication %>
+#### TDD Continued from previous class
 
 #### Look at next class
 * Look at homework <%= link_to_next_lecture %>
