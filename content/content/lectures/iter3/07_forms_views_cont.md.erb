@@ -6,14 +6,31 @@ homework: Read Chapters 20 and 21 of AWDR
 <%= homework_hdr %>
 * Read: Chapter 20 and 21 of AWDR. Some of this will be familiar, some of this will be new and very useful for your projects. Make sure you understand the purpose of sessions and how they are implemented in general, and also specifically with Rails.
 * Design the demo script for Shoscase Day. The best demo scripts "hook" the viewer with an interesting, novel bit. They also tell a story, e.g. "Let's say I've not used by bicycle in 2 years and would like to get rid of it, and maybe exchange it for something else." Your demo script is a series of bulletted steps that are meant to be followed during the demo. Meet with your team and discuss what the demo script should be and choose one of you to write it.<%= team_deliverable "Demo Script, as pdf" %>
-
+ 
 #### Teams
 * Teams should be intensely working on your products. You should be working on DEPLOY, GEMRESEARCH, DEMODATA, ADDTESTS, BOOTSTRAP around now.
 
 #### Discssion
 * Homework Reading
+  * Lets fly through the chapter together
   * What is "session state"? And where can it be stored?
-  * Why does it take two HTTP requests to handle a form?
   * What is the difference between "form_for" and "form_tag"?
+
+#### Cookies are the crux of sessions
+* Max 4K of data, stored as 'file' by the browser on YOUR laptop
+* Each HTTP GET can potentially store a cookie:
+  * `curl -I http://www.google.com | grep Set-Cookie`
+* And each HTTP GET after that will always get back that same cookie:
+
+~~~
+telnet www.google.com 80
+GET / HTTP/1.1
+User-Agent: curl/7.31..1
+Host: www.google.com
+Accept: */*
+~~~
+
+* But really, all you need is a 'fact' that the server gives to the client which is later on played back, e.g.
+  * `http://www.salas.com?SESSION=FFAF00AFFAF00AFFAF00AF`
 
 <%= include_topic :example_forms_views %>
