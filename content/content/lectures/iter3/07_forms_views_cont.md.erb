@@ -44,17 +44,15 @@ homework: Read Chapters 20 and 21 of AWDR
 * Max 4K of data, stored as 'file' by the browser on YOUR laptop
 * Each HTTP GET can potentially store a cookie:
   * `curl -I http://www.google.com | grep Set-Cookie`
-* And each HTTP GET after that will always get back that same cookie:
-
-~~~
-telnet www.google.com 80
-GET / HTTP/1.1
-User-Agent: curl/7.31..1
-Host: www.google.com
-Accept: */*
-~~~
-
+* Browser will send that cookie back whenever:
+	* it is sending a request to the same server
+	* the cookie has not expired
 * But really, all you need is a 'fact' that the server gives to the client which is later on played back, e.g.
   * `http://www.salas.com?SESSION=FFAF00AFFAF00AFFAF00AF`
 
 <%= include_topic :example_forms_views %>
+
+#### Look at next class
+* Look at homework <%= link_to_next_lecture %>
+
+
